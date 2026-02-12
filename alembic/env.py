@@ -18,8 +18,8 @@ if config.config_file_name is not None:
 # for 'autogenerate' support
 # from myapp import mymodel
 # target_metadata = mymodel.Base.metadata
-from app.db.base import Base
-from app.db import base_imports  # IMPORTANT: loads models
+from polaris.db.base import Base
+from polaris.db import base_imports  # IMPORTANT: loads models
 
 target_metadata = Base.metadata
 

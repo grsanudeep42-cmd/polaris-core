@@ -24,7 +24,7 @@ dependencies = [
 
 [tool.poetry]
 packages = [
-    { include = "app" }
+    { include = "polaris" }
 ]
 
 [build-system]
