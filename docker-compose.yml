@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:16
+    container_name: polaris_db
+    restart: always
+    environment:
+      POSTGRES_USER: polaris_user
+      POSTGRES_PASSWORD: polaris_password
+      POSTGRES_DB: polaris_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
